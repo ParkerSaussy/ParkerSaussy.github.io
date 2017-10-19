@@ -2,14 +2,46 @@
 <html>
 <head>
 	<title>Website</title>
+	<script type="text/javascript" src="assets/paper-full.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="site.css">
+
+	<script type="text/paperscript" canvas="myCanvas">
+		var firstPath = new Path.Circle({
+		center: [435, 50],
+		radius: 15
+		});
+		firstPath.fillColor = 'rgb(0, 0, 153)';
+
+		var secondPath = new Path.Circle({
+		center: [515, 50],
+		radius: 15
+		});
+		secondPath.fillColor = 'rgb(0, 128, 255)';
+		
+		var thirdPath = new Path.Circle({
+		center: [595, 50],
+		radius: 15
+		});
+		thirdPath.fillColor = 'rgb(204, 229, 255)';
+	</script>
 </head>
 <body>
-<h1>THIS IS MY WEBSITE.</h1>
+<div class = "container">
+<h1 class = "animated fadeInDown">THIS IS MY WEBSITE.</h1>
 
-<p>
+<p class = "animated fadeInDown">
 	Currently under construction, stay tuned for some things very soon.
 </p>
-
+<p class = "animated fadeInUp">
+	In the meantime, grab a coffee or go for a walk or something. I ain't your boss.
+</p>
+</div>
+	
+<div id="canvas">
+	<canvas id="myCanvas" resize></canvas>
+</div>
 </body>
 </html>
+
+
