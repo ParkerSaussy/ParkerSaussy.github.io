@@ -11,8 +11,36 @@ h1 {
 	text-align: center;
 }
 
-canvas {
-	width: 100%;
-	height: 100%;
+
+ .circle {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 40px;
+      display: inline-flex;
+    }
+
+.circle:hover {
+    width: 30px;
+    height: 30px;
+    transition: .15s;
 }
 
+#first {
+	background: rgb(0,0,153);
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+#second {
+	background: rgb(51,51,255);
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+#third {
+	background: rgb(204,255,255);
+	margin-right: 2%;
+	margin-left: 2%;
+}
